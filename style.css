@@ -133,3 +133,104 @@ body {
     font-size: 18px;
   }
 }
+
+.main-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 60px;
+}
+
+.form-component {
+  width: 483px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.form-component h3 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #1E0E62;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.form-component form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-component input[type="email"],
+.form-component input[type="password"] {
+  padding: 15px;
+  border: 1px solid #D1D1D1;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.checkbox-container label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  color: #1E0E62;
+  margin-left: 10px;
+}
+
+.form-component button {
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.btn-sign-in {
+  background-color: #482BE7;
+  color: #FFFFFF;
+}
+
+.btn-twitter {
+  background-color: #1DA1F2;
+  color: #FFFFFF;
+}
+
+.btn-sign-in:hover {
+  background-color: #3a22b8;
+}
+
+.btn-twitter:hover {
+  background-color: #1a90d9;
+}
+
+.separator {
+  text-align: center;
+  color: #A1A1A1;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.account-link {
+  font-family: 'DM Sans', sans-serif;
+  text-align: center;
+  color: #1E0E62;
+  font-size: 16px;
+}
+
+.account-link span {
+  color: #482BE7;
+  font-weight: 700;
+  cursor: pointer;
+}
