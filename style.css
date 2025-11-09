@@ -74,3 +74,62 @@ body {
     background-color: #d63370;
     opacity: 1.0;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap');
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  width: 471px;
+  color: #FFFFFF;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.main-content h1 {
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+.main-content p {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 32px;
+  margin: 0;
+}
+
+.btn-learn-more {
+  background-color: #E93A7D;
+  color: #FFFFFF;
+  text-decoration: none;
+  width: 173.18px;
+  height: 50.3px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    width: 90%;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .main-content h1 {
+    font-size: 44px;
+    line-height: 54px;
+  }
+
+  .main-content p {
+    font-size: 18px;
+  }
+}
