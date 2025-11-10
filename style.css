@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -21,7 +23,7 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align: center;
+    align-items: center;
 }
 
 .logo a {
@@ -75,7 +77,6 @@ body {
     opacity: 1.0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap');
 
 .main-content {
   display: flex;
@@ -233,4 +234,78 @@ body {
   color: #482BE7;
   font-weight: 700;
   cursor: pointer;
+}
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .main-nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .hamburger {
+        display: block;
+        margin-left: 20px;
+    }
+
+    .nav-links li:not(.cta-list-item) {
+        display: none;
+    }
+    
+    .main-nav li {
+         margin-left: 0;
+    }
+    
+    .nav-links.active {
+        position: absolute;
+        top: 150px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+        z-index: 999;
+    }
+
+    .nav-links.active li:not(.cta-list-item) {
+        display: list-item;
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.active li a {
+        color: #333;
+    }
+    
+    .nav-links.active .cta-list-item {
+         display: none;
+    }
+
+    .hamburger.toggle {
+        z-index: 1000;
+    }
+    .hamburger.toggle .line:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .hamburger.toggle .line:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.toggle .line:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
 }

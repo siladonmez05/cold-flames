@@ -17,13 +17,19 @@
             </div>
 
             <nav class="main-nav">
-                <ul>
+                <ul class="nav-links">
                     <li><a href="#">Overview</a></li>
                     <li><a href="#">Prices</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Feedback</a></li>
-                    <li><a href="#" class="cta-button">Purchase</a></li>
+                    <li class="cta-list-item"><a href="#" class="cta-button">Purchase</a></li>
                 </ul>
+
+                    <div class="hamburger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
             </nav>
         </div>
     </header>
@@ -61,5 +67,14 @@
 
         </div>
     </div>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+            hamburger.classList.toggle("toggle");
+        });
+    </script>
 </body>
 </html>
